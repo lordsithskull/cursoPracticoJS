@@ -14,7 +14,7 @@
     <section>
         <h2>Calcula el área y perímetro de un cuadrado</h2> 
         <form>
-            <label for="InputCuadrado">Escribe la medida del lado </label>
+            <label for="InputCuadrado"> Escribe la medida del lado </label>
             <input id="InputCuadrado" type="number" />
             <button type="button" onclick="calcularPerimetroCuadrado()" >Calcular perímetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular  área</button>
@@ -22,6 +22,24 @@
         </form>
     </section>
     <script src="./figuras.js"></script>
-    
+    <h2>Calcula el área y perímetro del triángulo </h2>
+    <form>
+        <label for="InputMayor">Lado Mayor</label>
+        <input id="InputMayor" type="number">
+        
+        <label for="InputMenor">Lado Menor</label>
+        <input id="InputMenor" type="number">
+
+        <label for="InputBase">Base (b)</label>
+        <input id="InputBase" type="number">
+        
+        <label for="InputAltura">Altura (h)</label>
+        <input id="InputAltura" type="number">
+        
+        
+        <button type="button" onclick="calcularPerimetroTriangulo()" >Calcular perímetro</button>
+        <button type="button" onclick="calcularAreaTriangulo()">Calcular  área</button>
+    </form>
+
 </body>
 </html>
