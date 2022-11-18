@@ -80,6 +80,22 @@ console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + n
 
 ```
 
+```
+let name = "Juan David";
+let lastname = "Castro Gallego";
+let nickname = "juandc";
+
+function completeName(name,lastname){
+   return (name + " " + lastname);
+}
+
+function imprimir (name,lastname,nickname){
+    const nombreCom = completeName(name,lastname);
+    console.log("Mi nombre es " + nombreCom + ", pero prefiero que me digas " + nickname +  ".");
+}
+
+```
+
 ## Condicionales
 
 
