@@ -102,6 +102,7 @@ function imprimir (name,lastname,nickname){
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un condicional? 
+    - - Es un bloque de código que se ejecutará en función de una condición (o validación) a cumplirse 
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias? If, Bool, switch
 - ¿Puedo combinar funciones y condicionales? Si
 
@@ -137,8 +138,10 @@ switch (tipoDeSuscripcion) {
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
 - ¿Qué es un ciclo?
+ - - bloque de coódigo que puede ser ejecutado mientras se cumpla una condicón
 - ¿Qué tipos de ciclos existen en JavaScript? For, while, do while, 
 - ¿Qué es un ciclo infinito y por qué es un problema?
+ - - es cuando la condición nunca se cumple y el ciclo se ejecuta de forma infinita, esta acción puede ocacionar un desborde de memoria, se requiere más memoria de la disponible
 - ¿Puedo mezclar ciclos y condicionales? Si
 
 ### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
