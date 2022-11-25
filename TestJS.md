@@ -70,7 +70,7 @@ Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métr
 
 ### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
-```
+```js
 const name = "Juan David";
 const lastname = "Castro Gallego";
 const completeName = name + lastname;
@@ -80,7 +80,7 @@ console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + n
 
 ```
 
-```
+```js
 let name = "Juan David";
 let lastname = "Castro Gallego";
 let nickname = "juandc";
@@ -108,7 +108,7 @@ function imprimir (name,lastname,nickname){
 
 ### 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
-```
+```js
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -125,12 +125,48 @@ switch (tipoDeSuscripcion) {
        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
        break;
 }
+```
 
+```js
+const tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion == "Free") {
+       console.log("Solo puedes tomar los cursos gratis");
+       }
+       
+else if (tipoDeSuscripcion === "Basic"){
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+        }
+else if (tipoDeSuscripcion === "Expert"){
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+       }   
+else if (tipoDeSuscripcion === "ExpertPlus"){
+       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
 ```
 
 ### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 
+
 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+
+```js
+const tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion == "Free") {
+       console.log("Solo puedes tomar los cursos gratis");
+       }
+       
+else if (tipoDeSuscripcion === "Basic"){
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+        }
+else if (tipoDeSuscripcion === "Expert"){
+       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+       }   
+else if (tipoDeSuscripcion === "ExpertPlus"){
+       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+```
 
 ## Ciclos
 
@@ -146,7 +182,7 @@ switch (tipoDeSuscripcion) {
 
 ### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
-```
+```js
 for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
 }
@@ -157,7 +193,7 @@ for (let i = 10; i >= 2; i--) {
 
 ```
 
-```
+```js
 let i = 0
 while (i < 5) {
     console.log("El valor de i es: " + i);
@@ -179,22 +215,65 @@ while (i >= 2) {
 
 ## Listas
 
+```js
+let respuesta = 0; 
+while (respuesta != '4' ) {
+    let pregunta = prompt('Cuánto es 2 + 2');
+    respuesta = pregunta;
+}
+prompt ("Respuesta correcta");
+
+
+```
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
-- ¿Qué es un array?
-- ¿Qué es un objeto?
+- ¿Qué es un array? 
+ - - es una lista  de elementos.  variables, objetos o funciones
+- ¿Qué es un objeto? 
+ - - es una coleccion de datos, funciones y atributos que representan un "objeto" del mundo real
 - ¿Cuándo es mejor usar objetos o arrays?
-- ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+    - - Una funcion es mejor cuando se repite un bloque de código, un objeto es mejor cuando se requiere utilizar mas de un bloque de código, para acciones muy similares
+- ¿Puedo mezclar arrays con objetos o incluso objetos con arrays? si
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+```js
+
+    arr = ["hola","adios"]
+    function imprimirPrimerElemento(arr){
+        console.log(arr[0]);
+    } 
+```
 
 
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
 
-
+```js
+ function imprimirArreglo(arr){
+        for(var num of arr){
+            console.log(num)
+        }
+    } 
+```
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
+```js
+
+const obj = {
+    nombre: 'fulanito',
+    edad: 3,
+    comidasFavoritas: ['pollo', 'vegetales'],
+};
+
+
+ function imprimirObjeto(obj){
+        const arr = Object.values(obj);
+        for(var num of arr){
+            console.log(num)
+        }
+    } 
+
+```
 
 ¿Cómo te fue? 🏆
 
