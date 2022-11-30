@@ -170,9 +170,59 @@ function suscripcion(tipoDeSuscripcion) {
 ```
 
 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+objeto v1
+```js
+//
+    const tiposDeSuscripciones = {
+        Free: "Solo puedes tomar los cursos gratis",
+        Basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
+        Expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
+        ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",
+    };   
 
+    suscripcion = 'Basic'
+    function conseguirTipoSuscripcion(suscripcion) {
+        if (tiposDeSuscripciones[suscripcion]) {
+            console.log(tiposDeSuscripciones[suscripcion])
+        }
+        else{
+            console.warn("Ese tipo de suscripcion no existe");
+        }
+    }
+``` 
 
+objeto v2
 
+```js
+
+    class tipoDeSuscripción{
+        constructor(tipoSus,mensaje,valor) {
+            this.tipoSus = tipoSus;
+            this.mensaje = mensaje;
+           // this.valor = valor;
+        }
+
+        mostrar () {
+            console.log("Tipo de suscripcion: " + this.tipoSus + " " + this.mensaje);
+        }
+    }
+
+    var suscripcion = [];
+    suscripcion.push(new tipoDeSuscripción("Free", "Solo puedes tomar los cursos gratis") );
+    suscripcion.push(new tipoDeSuscripción("Basic", "Puedes tomar casi todos los cursos de Platzi durante un mes") );
+    suscripcion.push(new tipoDeSuscripción("Expert", "Puedes tomar casi todos los cursos de Platzi durante un año") );
+    suscripcion.push(new tipoDeSuscripción("ExpertPlus", "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año") );
+
+    let pregunta = prompt('Que suscripcion tienes: 1 Free, 2 Basic, 3 Expert, 4 ExpertPlus'); 
+    i = pregunta-1;
+    if ((i>=0) && (i < suscripcion.length)){
+        
+        suscripcion[i].mostrar();
+        }
+    else {
+        console.log("El plan no existe");
+    }
+```
 ## Ciclos
 
 
