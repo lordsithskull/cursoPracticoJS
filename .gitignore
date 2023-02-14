@@ -109,3 +109,7 @@ dist
 .png
 .jpg 
 .gif
+
+#VisualStudioCode
+.vscode
+.vscode/*
